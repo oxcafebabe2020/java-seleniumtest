@@ -1,0 +1,5 @@
+Bat dosyasi calistirilir.
+
+Windows OS desteklemektedir. Unix icin classpath tanimlari degistirilmelidir.
+
+calisma  videosu : https://youtu.be/4-l5i-OVaZI 
