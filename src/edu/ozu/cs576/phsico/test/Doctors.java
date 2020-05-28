@@ -2,27 +2,21 @@ package edu.ozu.cs576.phsico.test;
 
 import org.openqa.selenium.WebDriver;
 
-/**
- * purpose : bu class 1 kullanicinin yapabilecegi tum islemleri test eder. login
- * , rezervasyon ekrani goruntuleme, meeting, makale gosterimi, profile ekrani
- * ve logout
- */
-public class Users implements ITest {
-
+public class Doctors implements ITest {
 	/**
-	 * purpose : bu class 1 kullanicinin yapabilecegi tum islemleri test eder. login
-	 * , rezervasyon ekrani goruntuleme, , profile ekrani
+	 * purpose : bu class 1 doktorun yapabilecegi tum islemleri test eder. login ,
+	 * rezervasyon ekrani goruntuleme, meeting, profile ekrani
 	 */
 	private Signin login = new Signin();
 	private ProfileSettings ps = new ProfileSettings();
 
 	@Override
 	public void run(WebDriver _driver) {
-		System.out.println("User Test Cases are started.");
+		System.out.println("Doctor Test Cases are started.");
 		// ogin.run(_driver);
 		ps.run(_driver);
 		try {
-			ps.changeNameSurnameOfPatient();
+			ps.changeNameSurnameOfDoctor();
 		} catch (InterruptedException e1) {
 			e1.printStackTrace();
 		}
@@ -36,7 +30,8 @@ public class Users implements ITest {
 
 		// ps.signout();
 
-		System.out.println("User Test Cases are completed.");
+		System.out.println("Doctor Test Cases are completed.");
 
 	}
+
 }

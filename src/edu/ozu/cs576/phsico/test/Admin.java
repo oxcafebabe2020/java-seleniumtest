@@ -12,9 +12,7 @@ public class Admin implements ITest {
 	@Override
 	public void run(WebDriver driver) {
 		// TODO Auto-generated method stub
-
+		System.out.println("Admin page test automation");
 	}
-
-	
 
 }
